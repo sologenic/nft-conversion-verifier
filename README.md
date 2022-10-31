@@ -14,7 +14,7 @@ NPM package to verify conversion of NFT from xls14d standard to xls20d
 ```const { verifyConversion } = require('sologenic-nft-conversion-verifier');
 
 const main = async () => {
-    var res = await verifyConversion('9B792FDD5D9F351EFE63C46128CE1DF346B362C9F8729EA940433A43E379DA6D', './pubkey.pem', 'wss://s.devnet.rippletest.net:51233');
+    var res = await verifyConversion('00080000F64EFF6B5C1CD8BCD60B1A8736DE722E6BF2CF1516E55FA300000001', './pubkey.pem','wss://s.devnet.rippletest.net:51233');
     console.log(res);
 }
 
