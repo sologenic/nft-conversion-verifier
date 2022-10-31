@@ -3,10 +3,8 @@ const xrpl = require("xrpl");
 const jwt = require("jsonwebtoken");
 const fs = require('fs');
 
-// "wss://xrpl.ws"
-
-module.exports = async (mintTxId, keyPath) => {
-    const client = new xrpl.Client("wss://s.devnet.rippletest.net:51233");
+module.exports = async (mintTxId, keyPath, xrplNode) => {
+    const client = new xrpl.Client(xrplNode);
     await client.connect();
     // fetch mint transaction for token
     const tx_info = await client.request({
