@@ -1,6 +1,6 @@
 {
   "name": "sologenic-nft-conversion-verifier",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "NPM package to verify conversion of NFT from xls14d standard to xls20d",
   "main": "index.js",
   "scripts": {
